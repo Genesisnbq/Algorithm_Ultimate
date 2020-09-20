@@ -1,0 +1,108 @@
+1.中文输出的时候 使用 code runner   其他时候 使用 IO run 比较好
+
+2. IO run 快捷键 Ctrl+Enter     code runner 快捷键 Ctrl+ALt + N
+
+3.有些是 i是从1开始读入的 前缀和 差分......  差分最重要的是 insert
+
+4.string 不能读入空格 一遇到空格就停止读入(后面不管读入再多 都停止读入了)
+
+5.有了size就别用int了 避免int和 unsigned混用  可以用auto自动推断变量
+
+6.cout输出浮点数类型的 只能输出小数点后一位
+
+7. Better comments拓展    ？ * todo ！
+
+8. 写循环的时候 如果换行了 就ctrl+ z  复位
+
+9.我这个分类是 一周 分两次 一次一个数字
+
+10. 最好用 scanf 和 printf
+
+11. ios::sync_with_stdio(false)   和  cin.tle(0) 一起用
+
+12.limits.h 头文件中 有     INT_MIN INT_MAX  可以取这两个值
+
+13. 为了方便  文件名改成中文  但是 F5 的时候要改掉 不然无法使用
+
+14.并查集：涉及到集合合并的时候  堆: 一堆数的最小值和最大值  set(平衡树):有序列表
+   树状数组、线段树: 区间合并 区间和
+
+15.当我们看到一道题目  首先要看一下哪些操作可以进行优化
+
+16.读入字符串 scanf 会自动把 空格 回车 制表符 忽略掉
+
+17. win+1  快速启动谷歌
+
+18. ctime头文件  (double)clock()/ClOCKS_PER_SEC    命令行   可以显示程序运行的时间
+
+19.有时候出现禁止访问的时候可以看一下是否是 否个word打错了
+
+一般ACM或者笔试题的时间限制是1秒或2秒。
+在这种情况下，C++代码中的操作次数控制在 107107 为最佳。
+
+下面给出在不同数据范围下，代码的时间复杂度和算法该如何选择：
+
+n≤30n≤30, 指数级别, dfs+剪枝，状态压缩dp
+n≤100n≤100 => O(n3)O(n3)，floyd，dp
+n≤1000n≤1000 => O(n2)O(n2)，O(n2logn)O(n2logn)，dp，二分
+n≤10000n≤10000 => O(n∗n√)O(n∗n)，块状链表
+n≤100000n≤100000 => O(nlogn)O(nlogn) => 各种sort，线段树、树状数组、set/map、heap、dijkstra+heap、spfa、求凸包、求半平面交、二分
+n≤1000000n≤1000000 => O(n)O(n), 以及常数较小的 O(nlogn)O(nlogn) 算法 => hash、双指针扫描、kmp、AC自动机，常数比较小的 O(nlogn)O(nlogn) 的做法：sort、树状数组、heap、dijkstra、spfa
+n≤10000000n≤10000000 => O(n)O(n)，双指针扫描、kmp、AC自动机、线性筛素数
+n≤109n≤109 => O(n√)O(n)，判断质数
+n≤1018n≤1018 => O(logn)O(logn)，最大公约数
+
+在  cctype头文件中,含有一个 isdigit 函数 判断是不是数字字符
+
+
+20.可以使用python 进行打表
+
+21. 卡常代码
+#pragma GCC optimize(3)
+#pragma GCC optimize("Ofast")
+#pragma GCC optimize("inline")
+#pragma GCC optimize("-fgcse")
+#pragma GCC optimize("-fgcse-lm")
+#pragma GCC optimize("-fipa-sra")
+#pragma GCC optimize("-ftree-pre")
+#pragma GCC optimize("-ftree-vrp")
+#pragma GCC optimize("-fpeephole2")
+#pragma GCC optimize("-ffast-math")
+#pragma GCC optimize("-fsched-spec")
+#pragma GCC optimize("unroll-loops")
+#pragma GCC optimize("-falign-jumps")
+#pragma GCC optimize("-falign-loops")
+#pragma GCC optimize("-falign-labels")
+#pragma GCC optimize("-fdevirtualize")
+#pragma GCC optimize("-fcaller-saves")
+#pragma GCC optimize("-fcrossjumping")
+#pragma GCC optimize("-fthread-jumps")
+#pragma GCC optimize("-funroll-loops")
+#pragma GCC optimize("-fwhole-program")
+#pragma GCC optimize("-freorder-blocks")
+#pragma GCC optimize("-fschedule-insns")
+#pragma GCC optimize("inline-functions")
+#pragma GCC optimize("-ftree-tail-merge")
+#pragma GCC optimize("-fschedule-insns2")
+#pragma GCC optimize("-fstrict-aliasing")
+#pragma GCC optimize("-fstrict-overflow")
+#pragma GCC optimize("-falign-functions")
+#pragma GCC optimize("-fcse-skip-blocks")
+#pragma GCC optimize("-fcse-follow-jumps")
+#pragma GCC optimize("-fsched-interblock")
+#pragma GCC optimize("-fpartial-inlining")
+#pragma GCC optimize("no-stack-protector")
+#pragma GCC optimize("-freorder-functions")
+#pragma GCC optimize("-findirect-inlining")
+#pragma GCC optimize("-fhoist-adjacent-loads")
+#pragma GCC optimize("-frerun-cse-after-loop")
+#pragma GCC optimize("inline-small-functions")
+#pragma GCC optimize("-finline-small-functions")
+#pragma GCC optimize("-ftree-switch-conversion")
+#pragma GCC optimize("-foptimize-sibling-calls")
+#pragma GCC optimize("-fexpensive-optimizations")
+#pragma GCC optimize("-funsafe-loop-optimizations")
+#pragma GCC optimize("inline-functions-called-once")
+#pragma GCC optimize("-fdelete-null-pointer-checks")
+
+22.
